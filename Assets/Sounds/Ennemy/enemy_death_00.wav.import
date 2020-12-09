@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/enemy_death_00.wav-c792ce02d2ddd8b34a7b9821bd798d2a.sample"
+
+[deps]
+
+source_file="res://Assets/Sounds/Ennemy/enemy_death_00.wav"
+dest_files=[ "res://.import/enemy_death_00.wav-c792ce02d2ddd8b34a7b9821bd798d2a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

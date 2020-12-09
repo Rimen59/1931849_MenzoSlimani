@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/Start.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Borders.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Sounds/Environnement/PowerUp1.wav" type="AudioStream" id=3]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+niveau = "res://scenes/Start.tscn"
+
+[node name="Borders" parent="." instance=ExtResource( 2 )]
+
+[node name="Label" type="Label" parent="."]
+margin_left = 257.221
+margin_top = 252.709
+margin_right = 336.221
+margin_bottom = 270.709
+rect_scale = Vector2( 7, 7 )
+size_flags_stretch_ratio = 0.0
+text = "You Win !!!!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 397.543
+margin_top = 403.536
+margin_right = 622.543
+margin_bottom = 465.536
+text = "Try again"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Boom" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
